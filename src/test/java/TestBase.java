@@ -1,4 +1,5 @@
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import helpers.Attach;
@@ -44,11 +45,13 @@ public class TestBase {
         Attach.screenshotAs("Last screenshot");
         Attach.browserConsoleLogs();
         Attach.addVideo();
+        Selenide.closeWebDriver();
+
     }
 
 
-    @AfterEach
-    void closeWebDriver() {
-        WebDriverRunner.closeWebDriver();
-    }
+//    @AfterEach
+//    void closeWebDriver() {
+//        WebDriverRunner.closeWebDriver();
+//    }
 }
