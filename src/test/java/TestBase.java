@@ -45,10 +45,10 @@ public class TestBase {
         Attach.browserConsoleLogs();
         Attach.addVideo();
     }
-}
 
-//    @AfterEach
-//    void closeWebDriver() {
-//        WebDriverRunner.closeWebDriver();
-//    }
-//}
+
+    @AfterEach
+    void closeWebDriver() {
+        WebDriverRunner.closeWebDriver();
+    }
+}
