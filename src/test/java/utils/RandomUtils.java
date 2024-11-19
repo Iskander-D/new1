@@ -16,7 +16,7 @@ public class RandomUtils {
     public String phone = rufaker.phoneNumber().subscriberNumber(10);
     public String monthBrithday = enfaker.options().option("January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December");
-//    public String day = String.format("%02d", rufaker.number().numberBetween(1, 28));
+    public String day = String.format("%02d", rufaker.number().numberBetween(1, 28));
     public String yearBrithday = new SimpleDateFormat("yyyy").format(enfaker.date().birthday());
     public String address = rufaker.address().fullAddress();
     public String state = enfaker.options().option("NCR", "Haryana");
@@ -25,20 +25,20 @@ public class RandomUtils {
 
     public static void main(String[] args) {
     }
-    public final String day = Integer.toString(choseDay());
-
-    public int choseDay() {
-        if (monthBrithday.equals("February")) {
-            return enfaker.number().numberBetween(1, 28);
-        } else if (monthBrithday.equals("April") || monthBrithday.equals("June")
-                || monthBrithday.equals("September") || monthBrithday.equals("November")) {
-            return enfaker.number().numberBetween(1, 30);
-        } else {
-            return enfaker.number().numberBetween(1, 31);
-        }
-    }
-
+//    public final String day = Integer.toString(choseDay());
 //
+//    public int choseDay() {
+//        if (monthBrithday.equals("February")) {
+//            return enfaker.number().numberBetween(1, 28);
+//        } else if (monthBrithday.equals("April") || monthBrithday.equals("June")
+//                || monthBrithday.equals("September") || monthBrithday.equals("November")) {
+//            return enfaker.number().numberBetween(1, 30);
+//        } else {
+//            return enfaker.number().numberBetween(1, 31);
+//        }
+//    }
+
+
 //    public String getDayBrithday() {
 //        var year = Integer.parseInt(yearBrithday);
 //        if (monthBrithday.equals("February")) {
