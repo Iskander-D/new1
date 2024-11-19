@@ -120,7 +120,7 @@ public class RegistrationPage {
     @Step("Выбор штата")
     public RegistrationPage setState(String value) {
 
-        stateInput.click();
+        stateInput.scrollTo().click();
         stateCityWrapperInput.$(byText(value)).click();
 
         return this;
