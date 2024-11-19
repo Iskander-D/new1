@@ -15,6 +15,6 @@ public class CalendarComponent {
 
         $(".react-datepicker__month-select").$(byText(month)).click();
         $(".react-datepicker__year-select").$(byText(year)).click();
-        $(".react-datepicker__day--0" + day + ":not(.react-datepicker__day--outside-month)").click();
+        $(".react-datepicker__day--0" + day + ":not(.react-datepicker__day--outside-month)").scrollTo().click();
     }
 }
