@@ -39,6 +39,7 @@ public class RegistrationWithPageObjectsTests extends TestBase {
         //Действия по заполнению
         registrationPage
                 .openPage()
+                .removeBanner()
                 .setFirstName(firstName)
                 .setLastName(lastName)
                 .setEmail(email)
@@ -86,6 +87,7 @@ public class RegistrationWithPageObjectsTests extends TestBase {
         //Действия по заполнению
         registrationPage
                 .openPage()
+                .removeBanner()
                 .setFirstName(firstName)
                 .setLastName(lastName)
                 .setEmail(email)
@@ -135,6 +137,7 @@ public class RegistrationWithPageObjectsTests extends TestBase {
         //Действия по заполнению
         registrationPage
                 .openPage()
+                .removeBanner()
                 .setFirstName(firstName)
                 .setLastName(lastName)
                 .setEmail(email)
@@ -182,6 +185,7 @@ public class RegistrationWithPageObjectsTests extends TestBase {
         //Действия по заполнению
         registrationPage
                 .openPage()
+                .removeBanner()
                 .setFirstName(firstName)
                 .setLastName(lastName)
                 .setEmail(email)
@@ -214,6 +218,7 @@ public class RegistrationWithPageObjectsTests extends TestBase {
         registrationPage
                 //Действия
                 .openPage()
+                .removeBanner()
                 .clickButton()
                 //Проверка валидаций
                 .negativeResults();

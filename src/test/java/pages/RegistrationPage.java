@@ -34,12 +34,16 @@ public class RegistrationPage {
     public RegistrationPage openPage() {
         open("/automation-practice-form");
         $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
-        executeJavaScript("$('#fixedban').remove()");
-        executeJavaScript("$('footer').remove()");
+
 
         return this;
     }
-
+    @Step("Убрали рекламу ")
+    public RegistrationPage removeBanner() {
+        executeJavaScript("$('#fixedban').remove()");
+        executeJavaScript("$('footer').remove()");
+        return this;
+    }
     @Step("Заполненение Имени")
     public RegistrationPage setFirstName(String value) {
         firstNameInput.setValue(value);
