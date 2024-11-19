@@ -5,12 +5,12 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class CalendarComponent {
     public void setDate(String day, String month, String year) {
-        $(".react-datepicker__month-select").click();
-        $(byText(month)).click();
-        $(".react-datepicker__year-select").click();
-        $(byText(year)).click();
-        $(".react-datepicker__month").click();
-        $(byText(day)).click();
+        $(".react-datepicker__month-select").$(byText(month)).click();
+//        $(byText(month)).click();
+        $(".react-datepicker__year-select").$(byText(year)).click();
+//        $(byText(year)).click();
+        $(".react-datepicker__month").$(byText(day)).click();
+//        $(byText(day)).click();
 
 
 //        $(".react-datepicker__month-select").$(byText(month)).scrollTo().click();
