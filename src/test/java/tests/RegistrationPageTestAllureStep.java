@@ -27,7 +27,7 @@ public class RegistrationPageTestAllureStep {
                 Configuration.browser = "chrome";
                 Configuration.browserVersion = "130";
 //                Configuration.holdBrowserOpen = true;
-//              Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+            Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         }
         @AfterEach
         public void addAttachments() {
